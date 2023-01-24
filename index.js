@@ -1,6 +1,8 @@
-// Import stylesheets
-import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+var unboundSlice = Array.prototype.slice;
+var slice = Function.prototype.call.bind(unboundSlice);
+
+function list() {
+  return slice(arguments);
+}
+var list1 = list(1, 2, 3); // [1, 2, 3]
