@@ -13,3 +13,6 @@ var regex = /\//g;
 var number = "23"
 typeof number  // string
 typeof +number // number
+
+var url = encodeURIComponent('http://segmentfault.com/questions/newest')
+// "http%3A%2F%2Fsegmentfault.com%2Fquestions%2Fnewest"
