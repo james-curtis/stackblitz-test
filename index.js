@@ -16,3 +16,8 @@ typeof +number // number
 
 var url = encodeURIComponent('http://segmentfault.com/questions/newest')
 // "http%3A%2F%2Fsegmentfault.com%2Fquestions%2Fnewest"
+//
+//
+
+Number((1.005).toFixed(2)); // 1 instead of 1.01
+Math.round(1.005*100)/100; // 1 instead of 1.01
