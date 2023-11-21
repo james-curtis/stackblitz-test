@@ -9,3 +9,7 @@ var regex = /\//g;
 (temp.toLocaleDateString() + ' ' + temp.toLocaleTimeString().slice(2)).replace(regex,'-');	// "2015-5-7 9:04:10"
 
 (new Date).valueOf();  	// 1431004132641
+
+var number = "23"
+typeof number  // string
+typeof +number // number
